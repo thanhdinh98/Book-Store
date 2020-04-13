@@ -1,0 +1,26 @@
+{
+    "name": "home/server-admin-for-book-store-app",
+    "description": "Book Store App",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "thanhdinh98",
+            "email": "1660554@student.hcmus.edu.vn"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "twbs/bootstrap": "^4.1",
+        "fortawesome/font-awesome": "^4.7"
+    },
+    "scripts": {
+        "dev": "php -S localhost:5000 -t ./source",
+        "dev-db": "mysql -h localhost -u root -pthanhdinh98.it < ./sql/db.sql && composer methods && composer data",
+        "methods": "mysql -h localhost -u root -pthanhdinh98.it < ./sql/methods.sql",
+        "data" : "mysql -h localhost -u root -pthanhdinh98.it < ./sql/data.sql"
+    },
+    "config": {
+        "process-timeout":0
+    }
+}
